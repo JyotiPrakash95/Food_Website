@@ -1,0 +1,506 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+
+/* Uni-style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.5em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Oswald', sans-serif;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+:root {
+    --primary: rgb(191, 160, 101);
+    --color: #111111;
+    --font-color: #808080;
+}
+
+/* header */
+header {
+    background: #fff;
+    border-bottom: 1px solid var(--primary);
+    padding: 15px 0;
+    position: relative;
+}
+
+.uni-padding {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    position: relative;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 10px;
+    border-bottom: 2px solid transparent;
+    text-align: center;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 15px 15px 0;
+    display: inline-block;
+}
+
+nav ul li:hover {
+    border-bottom: 2px solid var(--color);
+    border-width: 40%;
+    transition: 1s;
+}
+
+nav ul li:first-child {
+    border-bottom: 2px solid var(--color);
+}
+
+.header-col img {
+    width: 100%;
+    cursor: pointer;
+}
+
+.header-col .fa {
+    color: #111111;
+    cursor: pointer;
+}
+
+.nav-links {
+    position: fixed;
+    top: 0;
+    right: -250px;
+    background: var(--primary);
+    padding: 2%;
+    width: 250px;
+    height: 100%;
+    z-index: 1;
+    transition: 1s;
+}
+
+/* banner */
+.banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(images/bg-img.jpeg);
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.banner-row {
+    min-height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.banner-col {
+    width: 85%;
+}
+
+.banner-col h1 {
+    font-size: 3.5rem;
+    color: var(--primary);
+}
+
+.banner-col p,
+a {
+    color: var(--font-color);
+    margin: 15px 0;
+    display: inline-block;
+}
+
+.cta-1 {
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    border: 2px solid var(--primary);
+    padding: 8px 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+
+.cta-1:hover {
+    color: #fff;
+    background: var(--primary);
+    transition: 0.5s;
+}
+
+/* about */
+.about {
+    position: relative;
+    margin-top: -120px;
+    padding-bottom: 100px;
+}
+
+.about-col img {
+    width: 100%;
+    max-width: 70px;
+    height: 70px;
+    border: 2px solid var(--primary);
+    padding: 10px;
+    border-radius: 50px;
+    margin-bottom: 20px;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.about-col img:hover {
+    transform: scale(1.2);
+}
+
+.about-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.about-col {
+    flex-basis: 31%;
+    text-align: center;
+    padding: 40px 20px;
+    border-radius: 20px;
+    background: #f2f2f2;
+    margin-top: 5%;
+    box-shadow: 0px 1px 2px 0px #aaa;
+}
+
+.about-col:hover {
+    box-shadow: 1px 3px 8px #aaa;
+}
+
+.about-col h3 {
+    font-size: 1.7rem;
+}
+
+.about-col p {
+    font-style: italic;
+    color: var(--font-color);
+}
+
+/* gallery */
+.gallery {
+    background-color: #f2f2f2;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.gallery-container>h2 {
+    font-size: 3rem;
+}
+
+.gallery-container>p {
+    margin-bottom: 50px;
+}
+
+.gallery-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.gallery-row>div {
+    flex-basis: 31%;
+    margin-top: 15px;
+    background-position: center;
+    background-size: cover;
+    min-height: 320px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    position: relative;
+}
+
+.gallery-row>div:hover .gallery-caption {
+    display: block;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.gallery-col-1 {
+    background-image: url(images/gallery-1.jpeg);
+}
+
+.gallery-col-2 {
+    background-image: url(images/gallery-2.jpeg);
+}
+
+.gallery-col-3 {
+    background-image: url(images/gallery-3jpeg.jpeg);
+}
+
+.gallery-caption {
+    background: rgb(191, 160, 101, 0.9);
+    min-height: 250px;
+    width: 100%;
+    padding-top: 30%;
+    display: none;
+    color: #fff;
+}
+
+.gallery-caption p {
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+/*  menu  */
+.menu {
+    width: 100%;
+    background: #fff;
+    padding: 100px 0;
+}
+
+.menu-row {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.menu-row>div {
+    flex-basis: 24%;
+    position: relative;
+}
+
+.menu-col:nth-child(even) {
+    text-align: center;
+    padding: 2%;
+    background: #f2f2f2;
+    margin-left: 1%;
+    margin-right: 1%;
+    border: 1px solid var(--primary);
+}
+
+.menu-col img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.menu-col h4 {
+    font-size: 1.4rem;
+}
+
+/* recipes */
+.recipes {
+    position: relative;
+    padding: 80px 0;
+    background: #f2f2f2;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(images/col-img.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.recipes-row {
+    width: 100%;
+    display: grid;
+    align-items: center;
+    position: relative;
+    padding: 0 8% !important;
+}
+
+.recipes-col {
+    color: #fff;
+    background-color: rgb(191, 160, 101, 0.9);
+    text-align: center;
+    width: 100%;
+    padding: 100px 40px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.recipes-col h2 {
+    font-size: 2.6rem;
+}
+
+.recipes-col {
+    padding: 50px 30px;
+}
+
+.recipes .fa {
+    font-size: 28px;
+    margin-top: 20px;
+    position: relative;
+    animation: move 2s ease-in-out 4s infinite forwards;
+    padding: 12px 8px;
+    border: 2px solid #111;
+    border-radius: 50px;
+}
+
+@keyframes move {
+    0% {
+        top: 0px
+    }
+
+    50% {
+        top: 20px
+    }
+
+    100% {
+        top: 0px
+    }
+}
+
+/* footer */
+footer {
+    width: 100%;
+    height: 100%;
+    background: #333333;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.footer span {
+    color: var(--primary);
+    text-decoration: underline;
+    cursor: pointer;
+    font-family: 'Oswald', sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width:1200px) {
+    .banner-col h1 {
+        font-size: 6rem;
+    }
+
+    .banner-col {
+        width: 55%;
+    }
+}
+
+@media (max-width:998px) {
+    .gallery-row>div {
+        min-height: 250px;
+    }
+
+    .gallery-caption {
+        display: block;
+        min-height: 160px;
+    }
+}
+
+@media (max-width:767px) {
+    .nav-links {
+        padding: 5%;
+    }
+
+    .banner-row {
+        min-height: 650px;
+    }
+
+    .banner-col h1 {
+        font-size: 3rem;
+    }
+
+    .about-row {
+        flex-direction: column;
+    }
+
+    .uni-padding {
+        padding: 0 5%;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .about {
+        margin-top: -80px;
+        padding-bottom: 40px;
+    }
+
+    .about-col h3 {
+        font-size: 1.4rem;
+    }
+
+    .gallery {
+        padding: 40px 0;
+    }
+
+    .gallery-row {
+        flex-direction: column;
+    }
+
+    .gallery-container>p {
+        margin-bottom: 20px;
+    }
+
+    .gallery-caption {
+        display: block;
+        padding: 15% 2%;
+    }
+
+    .gallery-container h2 {
+        font-size: 2.2rem;
+    }
+
+    .menu-row {
+        flex-direction: column;
+    }
+
+    .menu-col:nth-child(even) {
+        padding: 10%;
+        margin: 4% 0;
+    }
+
+    .menu {
+        padding: 40px 0;
+    }
+
+    .menu-col img {
+        max-height: 250px;
+    }
+
+    .recipes {
+        padding: 40px 0;
+    }
+
+    .recipes h2 {
+        font-size: 2rem;
+    }
+}
