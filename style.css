@@ -401,7 +401,7 @@ footer {
 
 
 
-
+/* Media Query for desktop  */
 
 @media (min-width:1200px) {
     .banner-col h1 {
@@ -412,6 +412,7 @@ footer {
         width: 55%;
     }
 }
+/* Media Query for tablet  */
 
 @media (max-width:998px) {
     .gallery-row>div {
@@ -424,6 +425,7 @@ footer {
     }
 }
 
+/* Media Query for Mobile  */
 @media (max-width:767px) {
     .nav-links {
         padding: 5%;
