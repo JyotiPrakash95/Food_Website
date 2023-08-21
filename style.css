@@ -291,6 +291,13 @@ a {
     flex-basis: 24%;
     position: relative;
 }
+.menu-col {overflow:hidden;
+}
+.menu-col img:hover {
+        scale: 1.2;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
 
 .menu-col:nth-child(even) {
     text-align: center;
