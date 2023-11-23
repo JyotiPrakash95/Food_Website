@@ -126,7 +126,7 @@ nav ul li:first-child {
     font-size: 3.5rem;
     color: var(--primary);
 }
-.banner p{width:70%;}
+.banner p{width:80%;}
 .banner-col p,
 a {
     color: var(--font-color);
