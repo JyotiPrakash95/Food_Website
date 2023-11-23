@@ -24,6 +24,7 @@ h5 {
 
 :root {
     --primary: rgb(191, 160, 101);
+    --secondery: #ffffff;
     --color: #111111;
     --font-color: #808080;
 }
@@ -102,7 +103,7 @@ nav ul li:first-child {
 
 /* banner */
 .banner {
-    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(images/bg-img.jpeg);
+    background: linear-gradient(249deg, rgb(0, 0, 0,0), #bfa065), url(images/bg-img.jpeg);
     width: 100%;
     height: 100%;
     background-position: center;
@@ -124,31 +125,32 @@ nav ul li:first-child {
 
 .banner-col h1 {
     font-size: 3.5rem;
-    color: var(--primary);
+    color: var(--secondery);
 }
-.banner p{width:80%;}
+
 .banner-col p,
 a {
     color: var(--font-color);
     margin: 15px 0;
     display: inline-block;
 }
-
+.banner p{width:80%;  color: var(--secondery);}
 .cta-1 {
     text-align: center;
     display: inline-block;
     text-decoration: none;
-    border: 2px solid var(--primary);
+    border: 2px solid var(--font-color);
     padding: 8px 20px;
     margin-top: 20px;
     border-radius: 20px;
     font-size: 16px;
     text-transform: capitalize;
+    transition:1s;
 }
 
 .cta-1:hover {
     color: #fff;
-    background: var(--primary);
+    background: var(--font-color);
     transition: 0.5s;
 }
 
