@@ -130,7 +130,7 @@ nav ul li:first-child {
 
 .banner-col p,
 a {
-    color: var(--font-color);
+    color: var(--color);
     margin: 15px 0;
     display: inline-block;
 }
